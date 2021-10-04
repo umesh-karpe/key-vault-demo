@@ -22,6 +22,7 @@ public class EmployeeController {
 	
 	@GetMapping("/employee/{id}")
 	public Employee findByProductId(@PathVariable int id) {
+		System.out.println("This is test");
 		return employeeService.findByEmployeeId(id);
 	}
 	
